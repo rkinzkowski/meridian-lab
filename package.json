@@ -1,0 +1,10 @@
+{
+  "name": "meridian-lab", "version": "0.1.0", "private": true,
+  "packageManager": "pnpm@11.19.0",
+  "scripts": {
+    "dev": "pnpm --filter @meridian/desktop dev",
+    "build": "pnpm --filter @meridian/desktop build",
+    "test": "pnpm --filter @meridian/desktop test",
+    "tauri": "pnpm --filter @meridian/desktop tauri"
+  }
+}

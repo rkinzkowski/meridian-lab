@@ -1,0 +1,8 @@
+packages:
+  - apps/desktop
+  - packages/*
+minimumReleaseAgeExclude:
+  - '@types/node@26.5.0'
+  - lucide-react@1.42.0
+onlyBuiltDependencies:
+  - esbuild

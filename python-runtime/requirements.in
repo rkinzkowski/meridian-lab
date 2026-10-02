@@ -1,0 +1,2 @@
+# Provisional compatibility pin: see docs/DEPENDENCY_DECISIONS.md.
+pymobiledevice3==11.9.1

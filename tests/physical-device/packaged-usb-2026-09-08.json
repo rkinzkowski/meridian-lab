@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-09T01:07:40.775298+00:00",
+  "artifact": "packaged Windows runtime",
+  "runtimeSha256": "ecf300eefa8f7b07a8f0dcd5f6430a8d2e052fc8c369af48ca2e6c836c347068",
+  "transport": "usb",
+  "steps": [
+    {
+      "name": "runtime.info",
+      "result": "PASS"
+    },
+    {
+      "name": "device.list",
+      "result": "PASS"
+    },
+    {
+      "name": "session.open",
+      "result": "PASS"
+    },
+    {
+      "name": "session.health",
+      "result": "PASS"
+    },
+    {
+      "name": "location.set",
+      "result": "PASS"
+    },
+    {
+      "name": "location.set",
+      "result": "PASS"
+    },
+    {
+      "name": "location.clear",
+      "result": "PASS"
+    },
+    {
+      "name": "runtime.shutdown",
+      "result": "PASS"
+    }
+  ],
+  "physicalGpsObservation": "PASS",
+  "noGpsFlashObservation": "PASS (owner noticed no jump in this run)",
+  "runtime": {
+    "version": "0.1.0",
+    "pythonVersion": "3.12.14",
+    "pymobiledevice3Version": "11.9.1",
+    "physicalDeviceVerified": false
+  },
+  "deviceIdRedacted": "device-8ff4684f",
+  "productVersion": "27.0",
+  "exitCode": 0,
+  "protocolResult": "PASS",
+  "ownerObservation": "Both locations and return worked; no jump noticed"
+}

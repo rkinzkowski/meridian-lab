@@ -1,0 +1,130 @@
+{
+  "artifact": "shipped desktop executable and bundled helper",
+  "cleanupError": null,
+  "deviceIdRedacted": "device-8ff4684f",
+  "diagnostics": {
+    "deviceIdRedacted": "device-8ff4684f",
+    "lastTypedError": null,
+    "mode": "hardware",
+    "physicalDeviceVerified": false,
+    "platform": "windows",
+    "runtime": {
+      "adapters": [
+        {
+          "ipv4Count": 1,
+          "ipv6Count": 1,
+          "name": "Hyper-V Virtual Ethernet Adapter"
+        },
+        {
+          "ipv4Count": 1,
+          "ipv6Count": 3,
+          "name": "Apple Mobile Device Ethernet"
+        },
+        {
+          "ipv4Count": 1,
+          "ipv6Count": 1,
+          "name": "Microsoft Wi-Fi Direct Virtual Adapter"
+        },
+        {
+          "ipv4Count": 1,
+          "ipv6Count": 1,
+          "name": "Microsoft Wi-Fi Direct Virtual Adapter #2"
+        },
+        {
+          "ipv4Count": 1,
+          "ipv6Count": 4,
+          "name": "Realtek 8852CE WiFi 6E PCI-E NIC"
+        },
+        {
+          "ipv4Count": 1,
+          "ipv6Count": 1,
+          "name": "Bluetooth Device (Personal Area Network)"
+        },
+        {
+          "ipv4Count": 1,
+          "ipv6Count": 1,
+          "name": "Realtek Gaming 2.5GbE Family Controller"
+        },
+        {
+          "ipv4Count": 1,
+          "ipv6Count": 1,
+          "name": "Software Loopback Interface 1"
+        }
+      ],
+      "architecture": "AMD64",
+      "cleanupFailures": [],
+      "deviceIdRedacted": "device-8ff4684f",
+      "failureClasses": [],
+      "firewallModified": false,
+      "ipv6": {
+        "registryState": "absent",
+        "socketAvailable": true
+      },
+      "lastError": null,
+      "physicalDeviceVerified": false,
+      "platform": "Windows",
+      "pymobiledevice3Version": "11.9.1",
+      "pythonVersion": "3.13.15",
+      "sessionOpen": true,
+      "transport": "usb",
+      "transportPolicy": "userspace-default",
+      "version": "0.1.0"
+    },
+    "session": "ready"
+  },
+  "error": null,
+  "lastSessionError": null,
+  "noGpsFlashObservation": "UNVERIFIED",
+  "physicalGpsObservation": "PASS",
+  "productVersion": "27.0",
+  "protocolResult": "PASS",
+  "scope": "native coordinator physical acceptance; graphical clicks not automated",
+  "steps": [
+    {
+      "name": "device-enumeration",
+      "result": "PASS"
+    },
+    {
+      "name": "selected-device-connect",
+      "result": "PASS"
+    },
+    {
+      "name": "developer-session-health",
+      "result": "PASS"
+    },
+    {
+      "name": "teleport",
+      "result": "PASS"
+    },
+    {
+      "name": "invalid-coordinate-rejected-without-changing-location",
+      "result": "PASS"
+    },
+    {
+      "name": "route-progress-and-pause",
+      "result": "PASS"
+    },
+    {
+      "name": "paused-route-keeps-acknowledged-position",
+      "result": "PASS"
+    },
+    {
+      "name": "route-resume-and-speed-change",
+      "result": "PASS"
+    },
+    {
+      "name": "joystick-east-retires-route",
+      "result": "PASS"
+    },
+    {
+      "name": "restore-clears-location-and-route",
+      "result": "PASS"
+    },
+    {
+      "name": "restore-and-owned-helper-shutdown",
+      "result": "PASS"
+    }
+  ],
+  "transport": "usb",
+  "ownerObservation": "All phases worked as described: moved north, held during pause, resumed faster, moved east, returned to real location."
+}

@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-10T06:17:06.621068+00:00",
+  "phoneAccessed": false,
+  "steps": [
+    {
+      "name": "runtime-prerequisites",
+      "executable": "meridian-runtime.exe",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "{\"phoneAccessed\": false, \"pythonVersion\": \"3.13.15\", \"opensslVersion\": \"OpenSSL 3.5.8 25 Aug 2026\", \"wirelessTlsPskAvailable\": true, \"steps\": [\"developer imports available\", \"in-memory TLS-PSK handshake and incorrect-key rejection passed\", \"isolated userspace stack started\", \"isolated userspace stack closed\"], \"tlsPsk\": {\"protocol\": \"TLSv1.2\", \"cipher\": \"ECDHE-PSK-CHACHA20-POLY1305\", \"incorrectKeyRejected\": true}, \"result\": \"PASS\", \"scope\": \"USB and Wi-Fi runtime prerequisites; no physical session tested\"}",
+      "error": "",
+      "sha256": "b14ffb4971462748b53b93aad824bdc6820d26c8b9be02554d8afde839a81b2d"
+    },
+    {
+      "name": "desktop-owned-runtime-and-demo",
+      "executable": "Meridian Lab.exe",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "Meridian desktop offline self-test: PASS (no phone accessed)",
+      "error": "",
+      "sha256": "3b96f1a40c12c9d69ba819ea903ee3a7962ae0910b08c9cfcc96c487bbd73def"
+    }
+  ],
+  "bundleSha256": "ce1e742f349045cbd5f560236694782ebbcb479d052dcb79661682815b38dfcb",
+  "result": "PASS"
+}

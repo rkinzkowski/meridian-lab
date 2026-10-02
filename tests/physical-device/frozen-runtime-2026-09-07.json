@@ -1,0 +1,33 @@
+{
+  "artifact": "frozen Windows developer runtime",
+  "locationChanged": false,
+  "steps": [
+    {
+      "method": "runtime.info",
+      "result": "PASS"
+    },
+    {
+      "method": "device.list",
+      "result": "PASS"
+    },
+    {
+      "method": "session.open",
+      "result": "FAIL",
+      "error": {
+        "code": "DEVICE_NOT_FOUND",
+        "message": "The selected iPhone is not connected.",
+        "recovery": "Connect and unlock that iPhone over USB.",
+        "retryable": true
+      }
+    },
+    {
+      "method": "diagnostics.get",
+      "result": "PASS"
+    },
+    {
+      "method": "runtime.shutdown",
+      "result": "PASS"
+    }
+  ],
+  "exitCode": 3221225477
+}

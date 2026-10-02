@@ -1,0 +1,46 @@
+{
+  "date": "2026-09-11",
+  "artifact": "Meridian Lab Windows portable GUI",
+  "desktopExecutableSha256": "57f9893c22014410549883bc724abe020d837f61678ed5d9d4fc023dd04e2bf9",
+  "phoneCommandsSent": false,
+  "steps": [
+    {
+      "name": "embedded-interface-and-street-map",
+      "result": "PASS",
+      "observation": "The portable interface opened without Vite and street maps rendered visibly."
+    },
+    {
+      "name": "persisted-pending-restore-load-after-legacy-upgrade",
+      "result": "PASS",
+      "observation": "The current portable launch loaded the persisted real pending-restore reminder."
+    },
+    {
+      "name": "keep-open-dismissal",
+      "result": "PASS",
+      "observation": "Keep open dismissed the pending-restoration dialog without closing the window."
+    },
+    {
+      "name": "x-pending-dialog",
+      "result": "PASS",
+      "observation": "Using the actual window X opened the pending-restoration dialog."
+    },
+    {
+      "name": "explicit-close-with-pending-restore",
+      "result": "PASS",
+      "elapsedMs": 621,
+      "observation": "Explicit Close with restore pending exited the window within the measured read-only poll interval."
+    },
+    {
+      "name": "relaunch-pending-reminder",
+      "result": "PASS",
+      "observation": "Relaunching the exact portable build loaded the recovery reminder."
+    },
+    {
+      "name": "phone-visible-restore",
+      "result": "UNVERIFIED",
+      "observation": "No phone command was sent and no physical restoration result was observed."
+    }
+  ],
+  "result": "PASS_WITH_PHYSICAL_RESTORE_UNVERIFIED",
+  "scope": "Windows GUI persistence and close/reopen behavior; no phone operation or physical restoration claim."
+}

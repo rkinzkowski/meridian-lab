@@ -1,0 +1,16 @@
+node_modules/
+dist/
+target/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.local
+test-results/
+.pytest_cache/
+.ruff_cache/
+apps/desktop/src-tauri/runtime/
+apps/ios/build/
+apps/ios/Generated/
+*.xcuserstate
+xcuserdata/

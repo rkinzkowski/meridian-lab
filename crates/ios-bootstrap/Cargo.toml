@@ -1,0 +1,25 @@
+[package]
+name = "meridian-ios-bootstrap"
+version.workspace = true
+edition = "2024"
+license.workspace = true
+[features]
+default = []
+device = ["dep:idevice", "dep:tokio", "dep:plist"]
+signing = ["device", "dep:isideload", "dep:rootcause", "dep:zeroize"]
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+sha2 = "0.10"
+base64 = "0.22"
+idevice = { version = "=0.1.65", optional = true, default-features = false, features = ["ring", "usbmuxd", "afc", "house_arrest", "installation_proxy"] }
+tokio = { workspace = true, optional = true }
+plist = { version = "1.8", optional = true }
+isideload = { version = "=0.3.17", optional = true, default-features = false, features = ["install", "tokio-mt"] }
+rootcause = { version = "0.12", optional = true }
+zeroize = { version = "1", optional = true }
+
+[[bin]]
+name = "meridian-ios-bootstrap"
+path = "src/bin/meridian-ios-bootstrap.rs"
+required-features = ["device"]

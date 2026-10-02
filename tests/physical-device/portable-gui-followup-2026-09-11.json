@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-11",
+  "artifact": "Meridian Lab Windows portable GUI",
+  "desktopExecutableSha256": "57f9893c22014410549883bc724abe020d837f61678ed5d9d4fc023dd04e2bf9",
+  "transport": "usb",
+  "phoneCommandsSent": "owner-operated GUI recovery only",
+  "steps": [
+    {
+      "name": "persisted-pending-restore-recovery",
+      "result": "PASS",
+      "observation": "After reconnect and Restore, the owner reported the iPhone was at its home location. The restoration journal was absent afterward and one exact portable process remained running during the read-only state check."
+    },
+    {
+      "name": "active-session-x-close",
+      "result": "PASS",
+      "observation": "The owner moved the phone to Times Square, closed the app, and confirmed real location returned. The restoration journal was absent afterward. The owner reopened the app, so the observed process count of one represented the reopened app rather than an exit failure."
+    },
+    {
+      "name": "active-session-close-with-pending-restore-choice",
+      "result": "NEEDS INVESTIGATION",
+      "observation": "The requested one-step sequence remains unverified: connect over USB, arm a pending journal before unplugging, apply Times Square, unplug while moving, wait ten seconds, use X, choose Close with restore pending, and leave the app closed. The owner separately observed the phone briefly remain simulated and then return home after unplugging; that is an automatic GPS reversion observation and is not Clear acknowledgement. The incomplete attempt is not classified as a product failure."
+    },
+    {
+      "name": "pre-unplug-times-square-journal-armed",
+      "result": "PASS",
+      "observation": "Owner confirmed Maps was at Times Square with USB connected. The canonical portable executable matched the recorded release hash; a schema-1 restoration journal was present with a USB request matching the existing authorized device record. No raw identifiers or coordinates are included."
+    },
+    {
+      "name": "disconnect-close-with-pending-restore",
+      "result": "PASS",
+      "observation": "After the owner unplugged following the armed Times Square session, the owner confirmed the app closed using Close with restore pending. A read-only check at 2026-09-11T17:52:59.6717516Z found the restoration journal present and zero owned portable processes. The earlier ambiguous attempt remains recorded separately and is not treated as a product failure."
+    },
+    {
+      "name": "reopen-reconnect-restore-clears-pending",
+      "result": "PASS",
+      "checkedAtUtc": "2026-09-11T17:58:55.9668344Z",
+      "observation": "After reopening, the owner reconnected USB, selected Reconnect and Restore, and confirmed the banner was gone with Ready status. The authoritative read-only check at checkedAtUtc found no restoration journal; the canonical portable executable hash was unchanged."
+    }
+  ],
+  "overallResult": "PASS",
+  "scope": "User-operated GUI recovery and persisted-journal verification; phase one includes owner phone-location observation. No raw coordinates, device identifiers or journal contents are included."
+}

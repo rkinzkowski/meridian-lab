@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-11",
+  "artifact": "Meridian Lab Windows portable GUI",
+  "desktopExecutableSha256": "57f9893c22014410549883bc724abe020d837f61678ed5d9d4fc023dd04e2bf",
+  "transport": "usb",
+  "phoneAccessed": true,
+  "steps": [
+    {
+      "name": "portable-boot-without-vite-server",
+      "result": "PASS",
+      "observation": "Embedded interface opened and online street map roads, labels and water rendered visually."
+    },
+    {
+      "name": "gui-usb-connect",
+      "result": "PASS",
+      "observation": "Selected USB iPhone reached Ready with a trusted developer session."
+    },
+    {
+      "name": "gui-times-square-teleport",
+      "result": "PASS",
+      "observation": "Times Square request reached Location active; this records protocol/UI state only and has no owner-confirmed phone observation."
+    },
+    {
+      "name": "gui-disconnect-recovery",
+      "result": "PASS",
+      "observation": "After the phone was removed, the UI reported that the selected USB iPhone was no longer connected and retained the last applied location."
+    },
+    {
+      "name": "legacy-restoration-journal-upgrade-preparation",
+      "result": "PASS",
+      "observation": "A sanitized schema-1 restoration journal containing only a selected-device request was observed in the prior app-data location; the exact old portable process was stopped after persistence. No phone command was sent. This is migration evidence only, not X/Exit or Clear/phone-restoration proof."
+    },
+    {
+      "name": "persisted-real-pending-restore-loaded",
+      "result": "PASS",
+      "observation": "The current portable GUI loaded the persisted real pending-restore obligation after the legacy upgrade."
+    },
+    {
+      "name": "x-pending-dialog",
+      "result": "PASS",
+      "observation": "Using the actual window close path displayed the pending-restoration dialog in the GUI."
+    },
+    {
+      "name": "close-confirm-and-reopen",
+      "result": "NEEDS INVESTIGATION",
+      "observation": "Final confirmation that the explicit close choice persists and the next launch reopens with the reminder remains under root verification."
+    },
+    {
+      "name": "gui-retarget-clear-and-device-visible-restore",
+      "result": "BLOCKED — PHYSICAL DEVICE",
+      "observation": "The phone was removed before Restore/Clear and no further phone operation was attempted."
+    },
+    {
+      "name": "gui-close-latency-and-active-session-cleanup",
+      "result": "BLOCKED — PHYSICAL DEVICE",
+      "observation": "An earlier fresh GUI close left the window absent at a later check, but exact latency and active-session cleanup were not measured in this run."
+    }
+  ],
+  "overallResult": "NEEDS INVESTIGATION",
+  "scope": "Portable GUI smoke and disconnect-recovery observation; not a complete graphical phone-control acceptance."
+}

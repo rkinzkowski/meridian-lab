@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-07T17:11:27.623075-04:00",
+  "deviceIdRedacted": "device-8ff4684f",
+  "runtime": {
+    "version": "0.1.0",
+    "pythonVersion": "3.12.14",
+    "pymobiledevice3Version": "11.9.1",
+    "physicalDeviceVerified": false
+  },
+  "steps": [
+    {
+      "name": "selected-device-rsd-dvt-location-open",
+      "result": "PASS"
+    },
+    {
+      "name": "set-a-service-acknowledged",
+      "result": "PASS"
+    },
+    {
+      "name": "set-b-same-session",
+      "result": "PASS"
+    },
+    {
+      "name": "clear-sent-service-responsive",
+      "result": "PASS"
+    },
+    {
+      "name": "cleanup",
+      "result": "PASS"
+    }
+  ],
+  "physicalGpsObservation": "PASS — user observed movement to Times Square and return to real location",
+  "noGpsFlashObservation": "UNVERIFIED",
+  "productVersion": "27.0",
+  "protocolResult": "PASS",
+  "userObservation": "Moved to Times Square and returned to my real location"
+}

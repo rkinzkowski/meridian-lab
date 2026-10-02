@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Meridian Lab",
+  "version": "0.1.0",
+  "identifier": "dev.meridianlab.desktop",
+  "build": {"beforeDevCommand": "pnpm dev", "devUrl": "http://127.0.0.1:1420", "beforeBuildCommand": "pnpm build", "frontendDist": "../dist"},
+  "app": {
+    "windows": [{"title": "Meridian Lab", "width": 1280, "height": 850, "minWidth": 850, "minHeight": 650}],
+    "security": {"csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://tiles.openfreemap.org; connect-src ipc: http://ipc.localhost https://tiles.openfreemap.org https://*.openfreemap.org; worker-src 'self' blob:; font-src 'self' https://tiles.openfreemap.org"}
+  },
+  "bundle": {"active": true, "targets": ["nsis", "dmg"], "resources": ["runtime/**/*"], "icon": ["icons/icon.png", "icons/icon.ico"], "windows": {"nsis": {"installMode": "currentUser"}}, "macOS": {"minimumSystemVersion": "12.0"}}
+}

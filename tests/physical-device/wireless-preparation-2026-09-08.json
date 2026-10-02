@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-09T01:27:34.813173+00:00",
+  "artifact": "packaged Windows runtime",
+  "runtimeSha256": "b14ffb4971462748b53b93aad824bdc6820d26c8b9be02554d8afde839a81b2d",
+  "transport": "usb",
+  "steps": [
+    {
+      "name": "runtime.info",
+      "result": "PASS"
+    },
+    {
+      "name": "device.list",
+      "result": "PASS"
+    },
+    {
+      "name": "session.open",
+      "result": "PASS"
+    },
+    {
+      "name": "session.health",
+      "result": "PASS"
+    },
+    {
+      "name": "pairing.prepare",
+      "result": "PASS"
+    },
+    {
+      "name": "runtime.shutdown",
+      "result": "PASS"
+    }
+  ],
+  "physicalGpsObservation": "UNVERIFIED",
+  "noGpsFlashObservation": "UNVERIFIED",
+  "runtime": {
+    "version": "0.1.0",
+    "pythonVersion": "3.13.15",
+    "pymobiledevice3Version": "11.9.1",
+    "physicalDeviceVerified": false
+  },
+  "deviceIdRedacted": "device-8ff4684f",
+  "productVersion": "27.0",
+  "exitCode": 0,
+  "protocolResult": "PASS"
+}

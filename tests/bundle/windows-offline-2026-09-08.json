@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-08T19:29:34.251204+00:00",
+  "phoneAccessed": false,
+  "steps": [
+    {
+      "name": "runtime-prerequisites",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "{\"phoneAccessed\": false, \"steps\": [\"developer imports available\", \"isolated userspace stack started\", \"isolated userspace stack closed\"], \"wirelessTlsPskAvailable\": false, \"result\": \"PASS\", \"scope\": \"USB runtime prerequisites; no physical session tested\"}",
+      "error": "",
+      "sha256": "ecf300eefa8f7b07a8f0dcd5f6430a8d2e052fc8c369af48ca2e6c836c347068"
+    },
+    {
+      "name": "desktop-owned-runtime-and-demo",
+      "result": "PASS",
+      "exitCode": 0,
+      "output": "Meridian desktop offline self-test: PASS (no phone accessed)",
+      "error": "",
+      "sha256": "b30cfc00a3aad8af3e1f30b483e1a2d474be53834011e30e84e9b42e3c92cf2e"
+    }
+  ],
+  "result": "PASS"
+}
